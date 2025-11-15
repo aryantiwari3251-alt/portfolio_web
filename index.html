@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aryan Tiwari | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-content">
+      <a href="#home" class="nav-logo" aria-label="Go to home">
+        <img width="50" src="logo.png" alt="Aryan Tiwari logo" >
+      </a>
+
+      <input type="checkbox" id="menu-checkbox" aria-label="Toggle navigation menu">
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#technical-skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <label for="menu-checkbox" class="menu-toggle" aria-hidden="true">
+        <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" 
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </label>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#technical-skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-content container">
+        <img src="pic.jpg" alt="Profile picture of Aryan Tiwari" class="profile-img">
+        <p style="font-size: 30px;" class="greeting">Hello, I'm</p>
+        <h1 class="hero-title">ARYAN TIWARI</h1>
+        <p class="hero-subtitle">First year student at Delhi Technological University from Computer Science Engineering Department — Learning Frontend Web development.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Portfolio</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3 style="color: rgb(83, 221, 187);">My Background</h3>
+            <p>I am a beginner-to-intermediate programmer learning Web development and understanding the ways to modify webpages. I enjoy C, HTML, CSS and small web projects. I learn by building projects and studying clear explanations.</p>
+            <p>I focus on writing readable code, understanding fundamentals, and improving step-by-step.</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/aryan-tiwari-a5b825379/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                 <img width="45" src="linkedinlogo.png" alt="LinkedIn logo">
+              </a>
+              <a href="https://github.com/aryantiwari3251-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                 <img width="45" src="githublogo.png" alt="GitHub logo">
+              </a>
+            </div>
+          </div>
+
+          <div class="about-card" style="display:none;">
+            <div class="infographic-placeholder">
+              <p style="font-size:1.25rem;color:#6b7280;">Infographic Placeholder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <h2 class="section-title text-center">Education</h2>
+        <h3 class="edu-title text-center">Education</h3>
+        <div class="timeline">
+          <div class="timeline-entry">
+            <span class="timeline-marker">🎓</span>
+            <div class="timeline-card">
+              <h4>Class XII</h4>
+              <p class="date">2023 - 2024</p>
+              <p class="institution">GBSSS Babarpur Shahdara School</p>
+              <p class="description">Completed higher secondary with PCM</p>
+            </div>
+          </div>
+
+          <div class="timeline-entry">
+            <span class="timeline-marker">🎓</span>
+            <div class="timeline-card">
+              <h4>Pursuing B.Tech. in Computer Science Engineering</h4>
+              <p class="date">Starting Aug 2025</p>
+              <p class="institution">Delhi Technological University</p>
+              <p class="description">Joined the B.Tech program — focusing on core programming and system design.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3 id="technical-skills" class="edu-title text-center">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <p class="skill-icon">💻</p>
+            <p class="skill-title">C Language</p>
+            <p class="skill-level">Intermediate</p>
+          </div>
+          <div class="skill-card">
+            <p class="skill-icon">🌐</p>
+            <p class="skill-title">HTML & CSS</p>
+            <p class="skill-level">Intermediate</p>
+          </div>
+          <div class="skill-card" style="margin:0;">
+            <p class="skill-icon">🧠</p>
+            <p class="skill-title">Machine Learning</p>
+            <p class="skill-level">Beginner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Projects/Portfolio</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 style="padding: 24px 20px; font-size: 25px; color: aqua;" class="simple-project-title">SIH 2025</h3>
+            <div class="project-desc" style="padding: 0 20px 24px; color: #d1d5db;">
+              <ul>
+                <li><strong>Smart India Hackathon solution</strong> for problem statement Gamified Web.</li>
+                <li>Worked in a team to design, code, and present a functional prototype.</li>
+                <li>Explored real-world STEM challenges and team collaboration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 style="padding: 24px 20px; font-size: 25px; color: aqua;" class="simple-project-title">Spider Bot</h3>
+            <div class="project-desc" style="padding: 0 20px 24px; color: #d1d5db;">
+              <ul>
+                <li>Developed a basic web crawler (Spider Bot) that extracts key information (like email addresses, headlines, or links) from websites.</li>
+                <li>Used Python and simple HTML parsing libraries.</li>
+                <li>Gained hands-on problem solving experience in web scraping and automation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 style="padding: 24px 20px; font-size: 25px; color: aqua;" class="simple-project-title">Profile Card Template</h3>
+            <div class="project-desc" style="padding: 0 20px 24px; color: #d1d5db;">
+              <ul>
+                <li>Designed and coded a responsive profile card template using pure HTML and CSS.</li>
+                <li>Emphasized minimal design and easy customization for personal branding or resumes.</li>
+                <li>Focused on clean, well-organized code and visual aesthetics for frontend UI.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+      <div class="container contact-content">
+        <h2 class="section-title text-center">Get In Touch</h2>
+        <p class="contact-subtitle text-center">Whether you have a question or just want to say hi — drop a message below.</p>
+
+        <div class="contact-box">
+          <div class="contact-details">
+            <div class="detail-item">
+              <a href="mailto:aryantiwari3251@gmail.com" >
+                <img width="60" src="maillogo.png" alt="Email icon">
+              </a>
+              <div class="detail-text">
+                <p>Email</p>
+                <p>aryantiwari3251@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <img width="50" src="location.png" alt="Location icon">
+              <div class="detail-text">
+                <p>Location</p>
+                <p>Delhi, India</p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+            <a href="tel:+918448803251">
+              <img width="50" src="phone.png" alt="Phone icon">
+              </a>
+              <div class="detail-text">
+                <p>Phone</p>
+                <p>+91 8448803251</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+        
+          <form class="contact-form" method="POST" autocomplete="on">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input autocomplete="name" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input autocomplete="email" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Mobile Number (optional)</label>
+              <input autocomplete="tel" type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea autocomplete="off" id="message" name="message" rows="4" placeholder="I'd love to discuss a project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Aryan Tiwari. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
